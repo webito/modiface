@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+	<title>Retailer Makeup SDK - Example page</title>
+	<script src="../../sdk.js"></script>
+    <script src="./image.js"></script>
+    <script src="./function.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <a href="" id="dl-to-cmp" download="myImage.png"></a>
+
+	<button onclick="startLive()">Start Live</button>
+    <button onclick="startPhoto()">Start Photo</button>
+    
+    <div class="display-container">
+        <div id="quad-container">
+            <div class="single-container">
+                <div id="single-label-0" class="single-label"></div>
+                <div id="single-look-0" class="single-look"></div>
+            </div>
+            <div class="single-container">
+                <div id="single-label-1" class="single-label"></div>
+                <div id="single-look-1" class="single-look"></div>
+            </div>
+            <div class="single-container">
+                <div id="single-label-2" class="single-label"></div>
+                <div id="single-look-2" class="single-look"></div>
+            </div>
+            <div class="single-container">
+                <div id="single-label-3" class="single-label"></div>
+                <div id="single-look-3" class="single-look"></div>
+            </div>
+        
+        </div>
+        <div id="countdown" class="countdown-overlay"></div>
+    </div>
+
+    <button onclick="changeLook('red')">Red Lip</button>
+    <button onclick="changeLook('pink')">Pink Lip</button>
+    <button onclick="changeLook('darkPurple')">Dark Purple Lip</button>
+    <button onclick="changeLook('lightPurple')">Light Purple Lip</button>
+    
+    <button id="instant-dl-btn" onclick="downloadImg()">Download</button>
+    <button onclick="timedDownloadImg()">Download Image After Timer (Livemode Only)</button>
+    <div id="loading-overlay"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+	<title>Retailer Makeup SDK - Example page</title>
+	<script src="../../sdk.js"></script>
+    <script src="./image.js"></script>
+    <script src="./function.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div id="dashboard-container">
+        <div id="canvas-orig" class="canvas"></div>
+        <div id="canvas" class="canvas"></div>
+        <div id="compare-slider" onmousedown="mouseSlide(event)">
+            <img src="Before-After-Slider.svg" id="compare-drag" draggable="false"></div>
+        </div>
+    </div>
+
+	<button onclick="startLive()">Start Live</button>
+	<button onclick="startPhoto()">Start Photo</button>
+</body>
+</html>

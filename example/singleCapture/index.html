@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<title>Retailer Makeup SDK - Example page</title>
+	<script src="../../sdk.js"></script>
+    <script src="./image.js"></script>
+    <script src="./function.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    
+    <a href="" id="dl-to-cmp" download="myImage.png"></a>
+
+	<button onclick="startLive()">Start Live</button>
+    <button onclick="startPhoto()">Start Photo</button>
+    <div class="canvas-dashboard">
+        <div id="canvas"></div>
+        <div id="countdown" class="countdown-overlay"></div>
+    </div>
+    <button id="instant-dl-btn" onclick="downloadImg()">Download Image</button>
+    <button onclick="timedDownloadImg()">Download Image After Timer (Livemode Only)</button>
+    <div id="loading-overlay"></div>
+</body>
+</html>
